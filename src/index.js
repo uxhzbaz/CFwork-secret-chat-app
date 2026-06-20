@@ -92,7 +92,7 @@ var ChatRoom = class {
             await this.state.storage.put("lastWriteDate", today);
           }
           if (dailyWrites >= 100000) {
-            ws.send(JSON.stringify({ type: "error", message: "今天的话题已聊完，明天再来吧！" }));
+            ws.send(JSON.stringify({ type: "error", message: "今日额度已聊完，明天再来吧！" }));
             return;
           }
 
@@ -215,7 +215,7 @@ var HTML = `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>秘密聊天室</title>
+    <title>聊天</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
     <style>
