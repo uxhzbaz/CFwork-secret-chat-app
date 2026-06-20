@@ -1,8 +1,8 @@
 # wrangler.toml (最终的、针对免费套餐的正确版本)
 
-name = "cfwork-secret-chat-app"
+name = "chat"
 main = "src/index.js"
-compatibility_date = "2024-03-01"
+compatibility_date = "2026-06-20"
 
 # 【绑定配置】
 # 告诉 Worker，代码里有一个叫 CHAT_ROOM 的变量，它是一个 Durable Object
